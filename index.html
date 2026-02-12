@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 1. SEO: Title -->
+    <!-- SEO: Title -->
     <title>Пранк бот ТГ и пранк звонок: лучшие боты и сайты для розыгрыша по телефону друзей</title>
     
-    <!-- 2. SEO: Description -->
-    <meta name="description" content="Собрал рабочие решения, где пранк бот телеграм и пранк бот по телефону помогают быстро сделать розыгрыш по телефону звонок. В материале: как разыграть друга по телефону, где заказать пранк звонок, какие боты для розыгрышей в ТГ и телеграмм бот для розыгрыша реально работают, сколько стоит пранк на заказ и как безопасно сделать телефонный пранк без лишних рисков.">
+    <!-- SEO: Description -->
+    <meta name="description" content="Собрал рабочие решения, где пранк бот телеграм и пранк бот по телефону помогают быстро сделать розыгрыш по телефону звонок. В материале: как разыграть друга по телефону, где заказать пранк звонок, какие боты для розыгрышей в ТГ и телеграмм бот для розыгрыша реально работают.">
     <meta name="robots" content="index, follow">
 
     <!-- Favicon -->
@@ -18,7 +18,7 @@
     <meta name="yandex-verification" content="2a52aaa3e3c06c9c" />
 
     <style>
-        /* ДИЗАЙН: Современный, Широкий, Градиент */
+        /* CSS: Финальная версия (Sky Blue) */
         :root {
             --bg-body: #f3f6fa;
             --bg-card: #ffffff;
@@ -39,21 +39,21 @@
             background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
             color: var(--text-main);
             line-height: 1.6;
-            padding-top: 60px;
+            padding-top: 60px; /* Отступ под меню */
         }
 
         /* Ссылки */
         a { color: var(--accent); text-decoration: none; transition: 0.2s; font-weight: 600; }
         a:hover { color: var(--accent-hover); text-decoration: underline; }
 
-        /* Контейнер (УВЕЛИЧЕНА ШИРИНА) */
+        /* Контейнер */
         .container {
-            max-width: 1200px; /* Соответствует ~6xl как в примере */
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* --- ЗАКРЕПЛЕННОЕ МЕНЮ --- */
+        /* МЕНЮ (Sticky) */
         .sticky-nav {
             position: fixed;
             top: 0;
@@ -92,51 +92,29 @@
         }
         .nav-links a:hover { color: var(--accent); text-decoration: none; }
 
-        /* --- HERO БЛОК (ВВЕДЕНИЕ) --- */
-        .hero-section {
+        /* ШАПКА (Только H1) */
+        header {
             background: #fff;
-            padding: 60px 40px;
+            padding: 40px 0;
             border-bottom: 1px solid var(--border-color);
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             text-align: center;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
         h1 {
-            font-size: 2.8rem;
-            margin-bottom: 25px;
+            font-size: 2.6rem;
+            margin: 0;
             color: var(--text-heading);
             line-height: 1.15;
-            /* Убрано ограничение по ширине */
+            max-width: 950px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .intro-text p {
-            /* Увеличена ширина текста */
-            max-width: 1000px;
-            margin: 0 auto 15px auto;
-            font-size: 1.1rem;
-            color: #4b5563;
-        }
-
-        .hero-btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 35px;
-            background: var(--btn-gradient);
-            color: white !important;
-            border-radius: 50px;
-            font-weight: 700;
-            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
-            transition: transform 0.2s;
-            font-size: 1.05rem;
-        }
-        .hero-btn:hover { transform: scale(1.05); text-decoration: none; }
-
-        /* --- ТИПОГРАФИКА --- */
+        /* ТИПОГРАФИКА */
         h2 {
-            font-size: 1.9rem;
+            font-size: 1.8rem;
             color: var(--text-heading);
             margin-top: 0;
             margin-bottom: 20px;
@@ -146,15 +124,15 @@
         .section-title {
             text-align: center;
             margin-top: 50px;
-            margin-bottom: 35px;
-            font-size: 2.2rem;
+            margin-bottom: 30px;
+            font-size: 2rem;
         }
 
-        h3 { font-size: 1.3rem; margin-top: 25px; margin-bottom: 12px; color: var(--text-heading); font-weight: 700; }
+        h3 { font-size: 1.25rem; margin-top: 20px; margin-bottom: 10px; color: var(--text-heading); font-weight: 700; }
         
         ul { list-style-type: none; padding-left: 0; margin-bottom: 20px; }
         
-        /* Маркеры списка внутри текста */
+        /* Маркеры списка */
         .review-content-col ul li, .text-block ul li {
             position: relative;
             padding-left: 25px;
@@ -169,49 +147,61 @@
             top: -5px;
         }
 
-        /* --- БЫСТРЫЙ СПИСОК (НА ВСЮ ШИРИНУ) --- */
+        /* БЫСТРЫЙ СПИСОК */
         .quick-list-wrapper {
-            width: 100%; /* На всю ширину контейнера */
-            margin-bottom: 60px;
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
         }
         .quick-list {
             background: #fff;
-            padding: 40px;
+            padding: 35px;
             border-radius: 16px;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
             border: 1px solid rgba(255,255,255,0.5);
         }
-        .quick-list h2 { text-align: center; margin-bottom: 30px; }
+        .quick-list h2 { text-align: center; margin-bottom: 25px; }
         .quick-list li {
-            margin-bottom: 18px;
-            padding-left: 35px;
+            margin-bottom: 15px;
+            padding-left: 30px;
             position: relative;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
         }
         .quick-list li::before {
             content: '⚡';
             position: absolute;
             left: 0;
-            top: 3px;
-            font-size: 1.2rem;
+            top: 2px;
         }
 
-        /* --- СЕТКА БОТОВ (GRID) --- */
+        /* ВВОДНЫЙ ТЕКСТ (Левое выравнивание) */
+        .intro-text-block {
+            background: transparent;
+            padding: 0 10px;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+        .intro-text-block p {
+            font-size: 1.1rem;
+            color: #4b5563;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        /* СЕТКА БОТОВ */
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 колонки */
-            gap: 40px; /* Больше отступ */
-            margin-bottom: 60px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
         }
 
-        /* Карточка */
         .review-card {
             display: flex;
             flex-direction: column;
             background-color: var(--bg-card);
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s;
             height: 100%;
             border: 1px solid transparent;
@@ -223,15 +213,14 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Картинка */
         .review-img-col {
             width: 100%;
-            height: 400px; /* Чуть выше */
+            height: 350px;
             background: radial-gradient(circle at center, #f3f4f6 0%, #ffffff 100%);
             display: flex;
             align-items: center; 
             justify-content: center;
-            padding: 25px;
+            padding: 20px;
             border-bottom: 1px solid var(--border-color);
         }
 
@@ -244,28 +233,27 @@
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
 
-        /* Текст карточки */
         .review-content-col {
-            padding: 35px;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
         }
 
         .review-content-col h2 {
-            font-size: 1.6rem;
-            margin-bottom: 12px;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
 
         .rating-badge {
             display: inline-block;
             background-color: #e0e7ff;
             color: #4338ca;
-            padding: 6px 14px;
+            padding: 5px 12px;
             border-radius: 8px;
             font-weight: 700;
-            font-size: 0.9rem;
-            margin-bottom: 18px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
         }
 
         .btn-card {
@@ -273,69 +261,94 @@
             width: 100%;
             background: var(--btn-gradient);
             color: #fff !important;
-            padding: 18px 20px;
+            padding: 16px 20px;
             border-radius: 12px;
             font-weight: 700;
             text-align: center;
-            margin-top: auto; 
+            margin-top: 40px; /* Увеличен отступ (Пункт 4) */
             box-shadow: 0 4px 6px rgba(99, 102, 241, 0.3);
             transition: opacity 0.2s;
             text-transform: uppercase;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             letter-spacing: 0.5px;
         }
         .btn-card:hover { opacity: 0.9; text-decoration: none; }
 
-        /* --- ТЕКСТОВЫЕ БЛОКИ (СТАТЬИ) - НА ВСЮ ШИРИНУ --- */
+        /* ТЕКСТОВЫЕ БЛОКИ (СТАТЬИ) */
         .text-block {
             background-color: #fff;
-            padding: 40px 50px;
+            padding: 35px 40px;
             border-radius: 16px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            margin-bottom: 25px;
-            width: 100%; /* На всю ширину */
+            margin-bottom: 25px; /* Уменьшен отступ между блоками */
+            max-width: 100%;
         }
 
-        .text-block p { font-size: 1.1rem; margin-bottom: 18px; color: #4b5563; }
+        .text-block p { font-size: 1.05rem; margin-bottom: 15px; color: #4b5563; }
 
         #faq h3 { color: var(--accent); }
 
-        /* Footer */
         footer {
             text-align: center;
-            margin-top: 80px;
-            padding: 50px 0;
+            margin-top: 60px;
+            padding: 40px 0;
             background: #fff;
             color: #9ca3af;
             border-top: 1px solid var(--border-color);
         }
 
-        /* --- АДАПТИВНОСТЬ (MOBILE) --- */
+        /* КНОПКА НАВЕРХ (Пункт 6) */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            border: none;
+            outline: none;
+            background: var(--btn-gradient);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            width: 50px;
+            height: 50px;
+            line-height: 20px;
+        }
+        #backToTop:hover { transform: translateY(-3px); }
+
+        /* АДАПТИВНОСТЬ */
         @media (max-width: 850px) {
-            .container { padding: 0 15px; }
-            .hero-section { padding: 40px 20px; }
-            .text-block, .quick-list { padding: 30px 20px; }
+            .container { padding: 0 12px; }
+            .text-block, .quick-list { padding: 25px 20px; }
 
             .nav-links { display: none; }
             .logo { margin: 0 auto; }
             
-            h1 { font-size: 2rem; line-height: 1.2; }
-            h2, .section-title { font-size: 1.6rem; line-height: 1.2; }
+            h1 { font-size: 1.8rem; line-height: 1.2; }
+            h2, .section-title { font-size: 1.5rem; line-height: 1.2; }
             
-            .cards-grid { grid-template-columns: 1fr; gap: 30px; }
+            /* Пункт 5: Уменьшение межстрочного интервала H3 в FAQ */
+            #faq h3 { line-height: 1.2; font-size: 1.15rem; margin-top: 15px; }
+
+            .cards-grid { grid-template-columns: 1fr; gap: 20px; }
             
             .review-img-col { height: auto; padding: 20px 20px 5px 20px; border-bottom: none; }
-            .review-img-col img { max-height: 300px; }
-            .review-content-col { padding: 15px 25px 30px 25px; }
+            .review-img-col img { max-height: 280px; }
+            .review-content-col { padding: 10px 20px 30px 20px; }
             
+            /* Заголовок карточки в 1 строку */
             .review-content-col h2 {
-                font-size: 1.4rem; 
+                font-size: 1.3rem; 
                 margin-bottom: 5px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            @media (max-width: 400px) { .review-content-col h2 { white-space: normal; } }
+            @media (max-width: 370px) { .review-content-col h2 { white-space: normal; } }
         }
     </style>
 </head>
@@ -353,21 +366,16 @@
         </div>
     </nav>
 
-    <!-- ВВЕДЕНИЕ (Hero) -->
-    <section class="hero-section">
+    <!-- Шапка (Только H1) -->
+    <header>
         <div class="container">
             <h1>Заказать пранк звонок: 5 ботов для розыгрышей по телефону</h1>
-            <div class="intro-text">
-                <p>Прошлым летом меня самого чуть не поймали на телефонный розыгрыш. Звонит якобы сотрудник службы безопасности банка: спокойный уверенный голос, правильные формулировки, ссылка на подозрительную операцию по карте. Я уже потянулся за телефоном с СМС, чтобы назвать код, как вдруг на заднем плане услышал знакомое ухмыляющееся сопение друга. Оказалось, он запустил пранк бот в телеграмме, который читает заранее записанный сценарий профессиональной озвучкой. С того дня я отдельно слежу за темой телефонных пранков и регулярно тестирую разные боты, потому что такой формат шуток при правильном подходе может быть очень смешным и совсем не токсичным.</p>
-                <p>В этом обзоре собрал пять сервисов, которыми реально сам пользовался или которые тщательно проверил по отзывам и примерам. Тут нет заброшенных проектов, странных ссылок и сервисов, которые не дозваниваются. Только рабочие варианты, где можно заказать пранк звонок или заказать пранк по телефону с готовыми сценариями или сделать свою персональную шутку. Расскажу, чем они отличаются, сколько стоят, кому подойдут и на что обращать внимание, чтобы розыгрыш по телефону был в радость и вам, и тем, кого вы разыгрываете.</p>
-            </div>
-            <a href="#rating" class="hero-btn">Перейти к рейтингу</a>
         </div>
-    </section>
+    </header>
 
     <main class="container">
         
-        <!-- БЫСТРЫЙ ВЫБОР -->
+        <!-- БЫСТРЫЙ ВЫБОР (Сначала список) -->
         <div class="quick-list-wrapper">
             <div class="quick-list">
                 <h2>Быстрый выбор пранка на заказ</h2>
@@ -381,8 +389,17 @@
             </div>
         </div>
 
-        <!-- РЕЙТИНГ (СЕТКА БОТОВ) -->
-        <div class="cards-grid" id="rating">
+        <!-- ВВОДНЫЙ ТЕКСТ (Слева) -->
+        <div class="intro-text-block">
+            <p>Прошлым летом меня самого чуть не поймали на телефонный розыгрыш. Звонит якобы сотрудник службы безопасности банка: спокойный уверенный голос, правильные формулировки, ссылка на подозрительную операцию по карте. Я уже потянулся за телефоном с СМС, чтобы назвать код, как вдруг на заднем плане услышал знакомое ухмыляющееся сопение друга. Оказалось, он запустил пранк бот в телеграмме, который читает заранее записанный сценарий профессиональной озвучкой. С того дня я отдельно слежу за темой телефонных пранков и регулярно тестирую разные боты, потому что такой формат шуток при правильном подходе может быть очень смешным и совсем не токсичным.</p>
+            <p>В этом обзоре собрал пять сервисов, которыми реально сам пользовался или которые тщательно проверил по отзывам и примерам. Тут нет заброшенных проектов, странных ссылок и сервисов, которые не дозваниваются. Только рабочие варианты, где можно заказать пранк звонок или заказать пранк по телефону с готовыми сценариями или сделать свою персональную шутку. Расскажу, чем они отличаются, сколько стоят, кому подойдут и на что обращать внимание, чтобы розыгрыш по телефону был в радость и вам, и тем, кого вы разыгрываете.</p>
+        </div>
+
+        <!-- ЗАГОЛОВОК РЕЙТИНГА -->
+        <h2 class="section-title" id="rating">Рейтинг ботов для пранков</h2>
+
+        <!-- СЕТКА КАРТОЧЕК -->
+        <div class="cards-grid">
 
             <!-- 1. БОРЯМБА -->
             <div class="review-card">
@@ -559,7 +576,7 @@
             </div>
         </div>
 
-        <!-- ТЕКСТОВЫЕ БЛОКИ (Разделены) -->
+        <!-- ТЕКСТОВЫЕ БЛОКИ (Статьи) -->
         <h2 class="section-title" id="info">Полезная информация</h2>
 
         <div class="text-block">
@@ -609,7 +626,25 @@
         </div>
     </footer>
 
-    <!-- 5. Yandex.Metrika counter -->
+    <!-- КНОПКА НАВЕРХ -->
+    <button id="backToTop" title="Наверх">↑</button>
+
+    <!-- Скрипт кнопки Наверх -->
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+        backToTopButton.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+
+    <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
     m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
